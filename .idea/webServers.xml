@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d7234803-d0ae-4f24-92c4-768b7e5a4aad" name="CargoFM" url="http://localhost/cargofm/public">
+        <fileTransfer port="0" mountedRoot="/Applications/MAMP/htdocs/cargofm" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
