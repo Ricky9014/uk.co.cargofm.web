@@ -259,4 +259,6 @@
 </div>
 <!--footer end-->
 </body>
+@yield('scripts')
+
 </html>
