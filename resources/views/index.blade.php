@@ -18,14 +18,14 @@
                 <div class="song_list ">
                     <div class="row">
                         <div class="col-md-6 col-6 text-center">
-                            <img src="images/song.jpg" class="song_main_img">
+                            <img src="images/song.jpg" class="albumArt song_main_img">
                         </div>
                         <div class="col-md-6 col-6">
                             <p class="playing">Now Playing</p>
-                            <p class="zeromargin">January 28th</p>
-                            <p>J.Cole</p>
+                            <p class="zeromargin track-name">Waiting</p>
+                            <p class="artist-name">Waiting</p>
                         </div>
-                    </div>
+                        </div>
                     <br>
                     <div class="row">
                         <div class="col-md-6 col-6">
@@ -68,4 +68,48 @@
         </div>
     </div>
     <!--section 2 end-->
+@endsection
+@section('scripts')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function()
+        {
+            // location of the AzuraCast API .
+            var stationAPILocation = 'http://radio.cargofm.co.uk/api/nowplaying/1';
+            var artistName = document.querySelector('.artist-name');
+            var trackName = document.querySelector('.track-name');
+            var nowPlayingWidget = document.querySelector('.now-playing-widget');
+            var albumArt = document.querySelector('.albumArt');
+            axios.get(stationAPILocation)
+                .then(function (response) {
+                    artistName.innerHTML = response.data.now_playing.song.artist;
+                    trackName.innerHTML = response.data.now_playing.song.title;
+                    albumArt.src = response.data.now_playing.song.art;
+                })
+                // default catchall error handling, in the event of a GET failure.
+                .catch(function (error) {
+                    nowPlayingWidget.innerHTML = '<b>Unable to load now playing data</b>';
+                });
+        });
+        var auto_refresh = setInterval(
+            function ()
+            {
+                // location of the AzuraCast API .
+                var stationAPILocation = 'http://radio.cargofm.co.uk/api/nowplaying/1';
+                var artistName = document.querySelector('.artist-name');
+                var trackName = document.querySelector('.track-name');
+                var nowPlayingWidget = document.querySelector('.now-playing-widget');
+                var albumArt = document.querySelector('.albumArt');
+                axios.get(stationAPILocation)
+                    .then(function (response) {
+                        artistName.innerHTML = response.data.now_playing.song.artist;
+                        trackName.innerHTML = response.data.now_playing.song.title;
+                        albumArt.src = response.data.now_playing.song.art;
+                    })
+                    // default catchall error handling, in the event of a GET failure.
+                    .catch(function (error) {
+                        nowPlayingWidget.innerHTML = '<b>Unable to load now playing data</b>';
+                    });
+            }, 10000); // refresh every 10000 milliseconds
+    </script>
 @endsection
