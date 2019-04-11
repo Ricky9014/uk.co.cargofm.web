@@ -8,8 +8,8 @@
 
             <div class="col-md-8 custom_padding margin">
                 <div class="adverising">
-                    <p>WANT YOUR ADD HERE? CONTACT<br>
-                        <a>ADVERTISING@CARGOFM.CO.UK</a><br>
+                    <p>Want your ad here? Contact<br>
+                        <a>advertising@cargofm.co.uk</a><br>
                         <span class="marketing_size">1215w X 238h</span>
                     </p>
                 </div>
