@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CARGO</title>
+    <title>CargoFM</title>
     <!--bootstrap 4-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,7 +112,7 @@
             </div>
         </div>
         <div class="col-lg-2 col-md-2 col-6 zeropadding">
-            <img src="images/team-1.jpg" class="team_img">
+            <img src="https://i.imgur.com/ftV21gZ.png" class="team_img">
         </div>
         <div class="col-lg-8 col-md-8 col-12 zeropadding">
             <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">

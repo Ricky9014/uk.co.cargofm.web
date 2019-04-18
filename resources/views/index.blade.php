@@ -38,7 +38,7 @@
 
                     <div class="row recents mt-1">
                         <div class="col-md-4 col-4 text-center">
-                            <img src="images/song1.jpg" class="song_img">
+                            <img src="https://i.imgur.com/ftV21gZ.png" class="song_img">
                         </div>
                         <div class="col-md-8 col-8">
                             <p class="zeromargin">FWU</p>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="row recents mt-1">
                         <div class="col-md-4 col-4 text-center">
-                            <img src="images/song2.jpg" class="song_img">
+                            <img src="https://i.imgur.com/ftV21gZ.png" class="song_img">
                         </div>
                         <div class="col-md-8 col-8">
                             <p class="zeromargin">Futura</p>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="row recents mt-1">
                         <div class="col-md-4 col-4 text-center">
-                            <img src="images/song3.jpg" class="song_img">
+                            <img src="https://i.imgur.com/ftV21gZ.png" class="song_img">
                         </div>
                         <div class="col-md-8 col-8">
                             <p class="zeromargin">I Bet U Look Good...</p>
